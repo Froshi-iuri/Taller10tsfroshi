@@ -1,11 +1,15 @@
+export {};//Si algo, esto es para no evitar errores con nombres de mismas variables en otros archivos
+//vuelve independiente ese archivo, lo pondré en cada uno de los archivos
+
 interface Estudiante{
     id: number,
     nombre: string,
+    edad: number,
     programa: string,
-    promedio: number,
+    promedio: number
 }
 
-const estudiante = [
+var estudiante:Estudiante[] = [
     { id: 1, nombre: "Froshi Iuri", edad: 20, programa: "Ingeniería de Sistemas", promedio: 4.2 },
     { id: 2, nombre: "Clerix Riul", edad: 22, programa: "Medicina", promedio: 4.8 },
     { id: 3, nombre: "Pixmn ter", edad: 19, programa: "Derecho", promedio: 3.9 },
